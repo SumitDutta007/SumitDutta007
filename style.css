@@ -440,6 +440,7 @@ a{
     flex-direction: column;
     justify-content: space-between;
     background: linear-gradient(white,rgb(126, 220, 247),white);
+    overflow: hidden;
 }
 .form{
     position: absolute;
@@ -489,15 +490,15 @@ a{
 
 
 .contact-icons i:nth-child(1){
-    padding: 27px 0 0 27px;
+    padding: 27px 0 0 30px;
     animation: icons 14s linear 1s infinite;
 }
 .contact-icons i:nth-child(2){
-    padding:0 0 0px 28px;
+    padding:0 0 0px 33px;
     animation: icons 14s linear 2s infinite;
 }
 .contact-icons i:nth-child(3){
-    padding:0 0 25px 28px;
+    padding:0 0 27px 32px;
     animation: icons 14s linear 3s infinite;
 }
 .bubbles{
