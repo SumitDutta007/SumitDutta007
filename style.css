@@ -316,7 +316,13 @@ a{
     background-color: rgb(236, 235, 235);
     display: flex;
     justify-content: center;
+    opacity: 0.5;
+    transition: 0.5s;
 }
+.color-scheme:hover{
+    opacity: 1;
+}
+
 .color-scheme form{
     display: flex;
     flex-direction: column;
