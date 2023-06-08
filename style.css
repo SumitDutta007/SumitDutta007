@@ -369,7 +369,6 @@ a{
     justify-content: center;
     height: 100vh;
     background-color: var(--aboutBackground);
-    z-index: -1;
 }
 #about::before{
     content: '';
