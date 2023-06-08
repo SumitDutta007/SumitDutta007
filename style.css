@@ -322,7 +322,6 @@ a{
 .color-scheme:hover{
     opacity: 1;
 }
-
 .color-scheme form{
     display: flex;
     flex-direction: column;
@@ -369,6 +368,7 @@ a{
     justify-content: center;
     height: 100vh;
     background-color: var(--aboutBackground);
+    z-index: 1;
 }
 #about::before{
     content: '';
