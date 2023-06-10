@@ -66,20 +66,19 @@
     
     .bars{
         display: block;
-        width: 0%;
     }
     .separator{
         margin-top: 50px;
         height: 93%;
         position: absolute;
-        left: 26%;
+        left: 0;
     }
     .right-bar{
         position: absolute;
-        left: 26%;
+        left: 0;
         top: 0;
         height: 100%;
-        width: 30%;
+        width: 85%;
     }
     .left-bar{
         display: none;
