@@ -48,3 +48,17 @@ colorTool.addEventListener('click',()=>{
     if(checkDisplay()) form.style.display = "flex";
     else form.style.display = "none";
 })
+
+// ************* Scroll Reveal **************
+ScrollReveal({
+    reset : true,
+    delay : 150,
+    duration : 1500,
+    distance : '60px'
+});
+
+ScrollReveal().reveal('.aboutMe , .projects-heading , .contact-heading',{origin:'top' , delay:50});
+ScrollReveal().reveal('.right-context, .Tic-Tac-Toe, .form',{origin:'right'});
+ScrollReveal().reveal('.portfolio , .bars ',{origin:'bottom'});
+ScrollReveal().reveal('.debugIt ,.footer',{origin:'left'});
+ScrollReveal().reveal('.buttons',{origin:'top'});
