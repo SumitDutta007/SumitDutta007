@@ -1,11 +1,16 @@
 /*-----------------FIRST PAGE MEDIA QUERIES-------------------*/
 
-@media screen and (max-width : 833px){
+@media screen and (max-width : 892px){
     .text{
+        justify-content: space-between;
         margin-right: 0;
+        width: 100%;
     }
-    .text li a{
-        padding: 20px 20px;
+    .logo{
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        opacity: 0.5;
     }
     .context-text{
         padding-left: 20px;
@@ -15,7 +20,7 @@
     }
     
 }
-@media screen and (max-width:620px){
+@media screen and (max-width:673px){
     .icons a{
         padding: 10px 20px;
         margin: 0 0;
@@ -24,7 +29,7 @@
         padding-left: 0;
     }
 }
-@media screen and (max-width:539px){
+@media screen and (max-width:593px){
     .context{
         justify-content: space-between;
         padding: 0 10px;

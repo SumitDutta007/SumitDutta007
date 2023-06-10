@@ -1,22 +1,15 @@
 /*--------------------------HOME PAGE MEDIA QUERIES------------------------*/
 
-@media screen and (max-width:514px){
-    .text li a{
-        padding: 20px 10px;
+@media screen and (max-width:537px){
+    .Navbar{
+        display: none;
     }
+    .navbarToggle{
+        display: flex;
+    }
+    
 }
 @media screen and (max-width:418px){
-    .text{
-        justify-content: space-between;
-        margin-right: 0;
-        width: 100%;
-    }
-    .logo{
-        position: absolute;
-        top: 50%;
-        left: 36%;
-        opacity: 0.5;
-    }
     #home .intro{
         font-size: 5vh;
     }

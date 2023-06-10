@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Dancing+Script:wght@700&family=Fasthand&family=Old+Standard+TT&family=Poppins&display=swap');
-:root{
-    
-}
+
 :root{
     /*  Navbar  */
     --navbarBefore : rgb(133, 233, 253);
@@ -9,7 +7,10 @@
     --navbarTextHoverColor : rgb(0, 213, 255);
     --navbarTextColor : black;
     --navbarIconColor : black;
-    
+    --toggleIconBackgroundColor : rgb(84, 227, 255);
+    --navbarBackgroundColor : linear-gradient(rgb(58, 154, 244),rgb(219, 236, 248));
+    --togglShadow : black;
+
     /*  Home    */
     --homePage : linear-gradient(rgb(126, 229, 250),white);
     --homeLineColor : black;
@@ -136,6 +137,94 @@ a{
 }
 .text li a:hover{
     font-size: 2.5vh;
+    font-weight: 500;
+    color:var(--navbarTextHoverColor);
+}
+
+/* -------------Navbar Toggle Section ----------------*/
+
+.navbarToggle{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    transition: 1s;
+}
+.navIcon{
+    z-index: 4;
+}
+.toggle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--toggleIconBackgroundColor);
+    border-radius: 50%;
+    padding: 2% 1%;
+    border: none;
+    
+}
+.toggle span:nth-child(1){
+    height: 3px;
+    width: 4vh;
+    border-radius: 20px;
+    background:black ;
+}
+.toggle span:nth-child(2){
+    margin: 3px 0px;
+    height: 3px;
+    width: 2vh;
+    border-radius: 20px;
+    background:black ;
+}
+.toggle span:nth-child(3){
+    height: 3px;
+    width: 4vh;
+    border-radius: 20px;
+    background:black ;
+}
+.toggleText{
+    display: none;
+    flex-direction: column;
+    left: 0;
+    top: 90%;
+    width: 100vw;
+    transition: 1s;
+}
+.toggleText li{
+    list-style: none;
+    margin: auto;
+    margin-bottom: 8px;
+    z-index: 2;
+}
+.toggleText li a{
+    position: relative;
+    color: var( --navbarTextColor);
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    z-index: 99;
+}
+.toggleText li a::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: -5%;
+    height: 100%;
+    width: 0;
+    background: var(--navbarTextHoverBackground);
+    border-radius: 20px;
+    z-index: -1;
+    transition: 0.5s;
+}
+.toggleText li a:hover::before{
+    width: 110%;
+}
+.toggleText li a:hover{
+    font-size: 1.7rem;
     font-weight: 500;
     color:var(--navbarTextHoverColor);
 }
@@ -310,20 +399,26 @@ a{
 }
 
 .color-scheme{
-    height: 30vh;
     width: 6vh;
-    border-radius: 20px 0 0 20px;
-    background-color: rgb(236, 235, 235);
-    display: flex;
-    justify-content: center;
-    opacity: 0.5;
     transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+
 }
 .color-scheme:hover{
     opacity: 1;
 }
+.color-scheme .colorTool{
+    border: none;
+    font-size: 3.3vh;
+    background: transparent;
+    margin-right: 0;
+    color: var(--togglShadow);
+}
 .color-scheme form{
-    display: flex;
+    display: none;
+    background-color: rgba(236, 235, 235, 0.792);
+    border-radius: 20px 0 0 20px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -332,7 +427,7 @@ a{
     appearance: none;
     height: 1rem;
     width: 1rem;
-    margin-top: 20px;
+    margin: 15px 0;
     border: 2px;
     border-radius: 50%;
     outline: 2px solid var(--radioColor);
@@ -732,6 +827,8 @@ a{
 :root:has(#white:checked){
     --navbarTextHoverBackground:black;
     --navbarTextHoverColor:white;
+    --toggleIconBackgroundColor : rgb(223, 222, 222);
+    --navbarBackgroundColor : rgb(236, 234, 234);
 
     --homePage : white;
     --homeIntroColor:black;
@@ -755,6 +852,9 @@ a{
 :root:has(#black:checked){
     --navbarTextHoverBackground : grey;
     --navbarTextHoverColor : white;
+    --toggleIconBackgroundColor : rgb(196, 195, 195);
+    --navbarBackgroundColor : linear-gradient(rgb(56, 56, 56),black,rgb(56, 56, 56));
+    --togglShadow : rgb(115, 115, 115);
 
     --homePage : linear-gradient(black,black,white);
     --navbarTextColor : rgb(198, 196, 196);
@@ -791,6 +891,8 @@ a{
     --navbarTextHoverColor : white;
     --navbarTextColor : rgb(255, 192, 239);
     --navbarIconColor :rgb(255, 192, 239);
+    --toggleIconBackgroundColor : rgb(229, 162, 251);
+    --navbarBackgroundColor : linear-gradient(rgba(52, 3, 92, 0.919),rgba(203, 111, 246, 0.963));
 
     --homePage : linear-gradient(rgb(71, 2, 87),white);
     --homeIconsBackgroundHover:rgb(242, 162, 230);
