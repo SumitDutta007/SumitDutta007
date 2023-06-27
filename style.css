@@ -496,7 +496,9 @@ a{
 .color-scheme .dropdown-menu{
     background: blue;
 }
-
+.color-scheme .dropdown-menu li a:hover{
+    color: black;
+}
 
 
 /* --------------------ABOUT PAGE CSS-------------------*/
