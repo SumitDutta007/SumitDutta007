@@ -23,15 +23,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Scroll Reveal Javascript -->
     <script src="https://unpkg.com/scrollreveal"></script>
+
     <title>Sumit Dutta</title>
 </head>
 <body>
+               <!-- Go To First Page           
+    <div class="arrow">
+       <a href="#home"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
+    </div> -->
     <!--            FIRST PAGE HTML          -->
 
         <!--        Navbar Section HTML     -->
 
         <div class="Navbar">
-            <div class="logo"><a href="#">
+            <div class="logo"><a href="#home">
                 <svg class="navIcon" version="1.0" xmlns="http://www.w3.org/2000/svg"
                 width="70.000000pt" height="70.000000pt" viewBox="0 0 225.000000 225.000000"
                 preserveAspectRatio="xMidYMid meet">
@@ -86,7 +91,7 @@
 
         <!--    Navbar Toggle Section   -->
         <div class="navbarToggle">
-            <div class="toggleLogo"><a href="#">
+            <div class="toggleLogo"><a href="#home">
                 <svg class="navIcon" version="1.0" xmlns="http://www.w3.org/2000/svg"
                 width="70.000000pt" height="70.000000pt" viewBox="0 0 225.000000 225.000000"
                 preserveAspectRatio="xMidYMid meet">
@@ -167,17 +172,32 @@
                     <a href="https://www.linkedin.com/in/sumit-dutta007/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </div>
+            <!-- Settings -->
             <div class="color-scheme">
+
                 <button class="colorTool">
                     <i class="fa-solid fa-screwdriver-wrench"></i>
                 </button>
-                
                 <form action="" class="colorPallete">
                         <input type="radio" name="color" id="blue" checked>
                         <input type="radio" name="color" id="white">
                         <input type="radio" name="color" id="black">
                         <input type="radio" name="color" id="pink">
                 </form>
+
+                <button class="music">
+                    <i class="fa-solid fa-music"></i>
+                </button>
+                
+                <div class="btn-group">
+                    <input type="text" name="Artist" id="artist" placeholder="Artist Name"></input>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                    </ul>
+                </div>
+
             </div>
             <div class="bottom-line"></div>
             <div class="end-line"></div>
@@ -224,7 +244,7 @@
                     <div class="card-body">
                     <h5 class="card-title">Learning Made Fun</h5>
                     <p class="card-text">How would you feel as a kid if you could save lives by answering some fun tricky questions and become a Hero ! This is an attemp to do the same with some fancy cartoonic animations for the kids so they can play and learn at the same time .</p>
-                    <a href="https://sumitdutta007.github.io/DebugIt-23/" class="card-link">Explore Me! <i class="fa-solid fa-link"></i></a>
+                    <a href="sumitdutta007.github.io/DebugIt-23/" class="card-link">Explore Me! <i class="fa-solid fa-link"></i></a>
                     </div>
                     <ul class="list-group list-group-flush">
                     
@@ -285,18 +305,21 @@
             <a href="https://www.linkedin.com/in/sumit-dutta007/" target="_blank"><img src="./Images/bubble.png" alt=""></a>
         </div>
         <div class="form">
-            <div class="mb-3 mail-add">
-                <label for="exampleFormControlInput1" class="form-label">Let me know your mail please <i class="fa fa-envelope" style="font-size:20px"></i></label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-3 message">
-                <label for="exampleFormControlTextarea1" class="form-label">Let's Chat !</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div class="buttons">
-                <div class="Submit"><button type="button" class="btn btn-dark">Submit</button></div>
-                <div class="Clear"><button type="button" class="btn btn-light">Clear</button></div>
-            </div>
+            <form action="https://formsubmit.co/8059d5b8d1a898f077e59006a23e0735" method="POST">
+                <div class="mb-3 mail-add">
+                    <label for="exampleFormControlInput1" class="form-label">Let me know your mail please <i class="fa fa-envelope" style="font-size:20px"></i></label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email" required>
+                </div>
+                <div class="mb-3 message">
+                    <label for="exampleFormControlTextarea1" class="form-label">Let's Chat !</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" required></textarea>
+                </div>
+                <div class="buttons">
+                    <div class="Submit"><button type="submit" class="btn btn-dark">Submit</button></div>
+                    <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                    <div class="Clear"><button type="button" class="btn btn-light">Clear</button></div>
+                </div>
+            </form>
         </div>
     </section>
 

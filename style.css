@@ -59,6 +59,25 @@ a{
     text-decoration: none;
 }
 
+.arrow{
+    position: fixed;
+    right: 3vh;
+    bottom: 3vh;
+    height: 8vh;
+    width: 8vh;
+    background: blue;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+}
+.arrow a{
+    color: white;
+    font-size: 5vh;
+}
+
+
 /* ---------------NAVBAR CSS------------------ */
 
 .Navbar{
@@ -403,17 +422,20 @@ a{
     transition: 0.5s;
     display: flex;
     flex-direction: column;
-
+    position: relative;
 }
-.color-scheme:hover{
+.color-scheme .colorTool:hover{
     opacity: 1;
 }
+
 .color-scheme .colorTool{
     border: none;
     font-size: 3.3vh;
     background: transparent;
     margin-right: 0;
     color: var(--togglShadow);
+    opacity: 0.5;
+    transition: 0.8s;
 }
 .color-scheme form{
     display: none;
@@ -449,6 +471,30 @@ a{
 }
 .color-scheme input[type = "radio"]#pink{
     --radioColor : rgb(246, 125, 228);
+}
+.color-scheme .music{
+    margin-top: 5px;
+    background: transparent;
+    border: none;
+    font-size: 2.5vh;
+    color: var(--togglShadow);
+    opacity: 0.5;
+    transition: 0.8s;
+}
+.color-scheme .music:hover{
+    opacity: 1;
+}
+.color-scheme .btn-group{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -210px;
+}
+.color-scheme .dropdown-menu li a{
+    color: white;
+}
+.color-scheme .dropdown-menu{
+    background: blue;
 }
 
 
@@ -856,7 +902,7 @@ a{
     --navbarTextHoverColor : white;
     --toggleIconBackgroundColor : rgb(196, 195, 195);
     --navbarBackgroundColor : linear-gradient(rgb(56, 56, 56),black,rgb(56, 56, 56));
-    --togglShadow : rgb(115, 115, 115);
+    --togglShadow : rgb(134, 134, 134);
 
     --homePage : linear-gradient(black,black,white);
     --navbarTextColor : rgb(198, 196, 196);
