@@ -1,9 +1,3 @@
-
-
-console.log("Hello")
-
-
-
 // *******  Toggle Navbar  ********* 
 
 const toggle = document.querySelector('.toggle');
@@ -51,13 +45,19 @@ const checkDisplay = ()=>{
 }
 
 colorTool.addEventListener('click',()=>{
-    if(checkDisplay()) form.style.display = "flex";
-    else form.style.display = "none";
+    if(checkDisplay()) {
+        form.style.display = "flex";
+        search.style.top = "220px";
+    }
+    else{
+        form.style.display = "none";
+        search.style.top = "40px";
+    }
 })
 
 // ************* Scroll Reveal **************
 ScrollReveal({
-    reset : true,
+    reset : false,
     delay : 150,
     duration : 1500,
     distance : '60px'
@@ -77,6 +77,7 @@ const search = document.querySelector('.btn-group')
 const artistButton = document.querySelector('.dropdown-toggle-split')
 const artistInput = document.querySelector('#artist')
 const dropdown_menu = document.querySelector('.dropdown-menu')
+
 
 music.addEventListener('click',()=>{
     if(search.style.display === "none"){
@@ -101,7 +102,6 @@ const getToken = async()=>{
         body:'grant_type=client_credentials'
     });
     const data = await result.json();
-    console.log(data.access_token)
     return data.access_token;
 }
 
@@ -132,13 +132,13 @@ const getTrack = async(token,artistId)=>{
         songs[e.album.name]=e.album.external_urls.spotify;
     })
 }
-
+//Add Tracks to Dropdown-Down Menu
 let artistName = ""
 
 artistButton.addEventListener('click',()=>{
         
     artistName = artistInput.value
-    console.log(artistName)
+
     const getDetails = async()=>{
         let token = await getToken()
         

@@ -23,6 +23,8 @@
     --homeIntroColor : black;
     --homeDescColor : rgb(73, 74, 74);
 
+    --songBackground:rgb(0, 106, 255);
+
     /*  About   */
     --aboutBackgroundBefore : rgba(85, 210, 255, 0.937);
     --aboutBlur : rgba(55, 199, 252, 0.937);
@@ -494,10 +496,13 @@ a{
     color: white;
 }
 .color-scheme .dropdown-menu{
-    background: blue;
+    background: var(--songBackground)
 }
 .color-scheme .dropdown-menu li a:hover{
     color: black;
+}
+.dropdown-toggle-split{
+    background: var(--songBackground);
 }
 
 
@@ -890,6 +895,8 @@ a{
     --aboutTitleColor : black;
     --barColor : black;
 
+    --songBackground:rgb(0, 0, 0);
+
     /*  Projects    */
     --projectsBackground : linear-gradient(white , rgb(206, 205, 205), white);
 
@@ -913,6 +920,8 @@ a{
     --homeIntroColor : rgb(206, 204, 204);
     --homeDescColor : rgb(151, 151, 151);
     --projectTitleColor : black;
+
+    --songBackground:rgb(0, 0, 0);
 
     /*  About   */
     --aboutBackground : rgb(151, 150, 150);
@@ -949,6 +958,8 @@ a{
     --homeLineColor : rgb(150, 1, 173);
     --homeIntroColor : rgb(255, 255, 255);
     --homeDescColor : rgb(234, 0, 255);
+
+    --songBackground:rgb(119, 36, 136);
 
     /*  About   */
     --aboutBackground : rgb(246, 157, 254);
