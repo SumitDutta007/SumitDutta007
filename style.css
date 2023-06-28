@@ -494,6 +494,7 @@ a{
 }
 .btn-group input[type="text"]#artist{
     background: rgba(0, 0, 0, 0.696);
+    color : white;
 }
 .color-scheme .dropdown-menu li a{
     color: white;
