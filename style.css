@@ -493,8 +493,9 @@ a{
     left: -210px;
 }
 .btn-group input[type="text"]#artist{
+    border-radius:50px;
     background: rgba(0, 0, 0, 0.696);
-    color : white;
+    color:white
 }
 .color-scheme .dropdown-menu li a{
     color: white;
@@ -508,6 +509,7 @@ a{
     color: black;
 }
 .dropdown-toggle-split{
+    border: none;
     background: var(--songBackground);
 }
 
