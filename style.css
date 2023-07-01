@@ -671,6 +671,9 @@ a{
     width: 100%;
     background: rgb(201, 200, 200);
 }
+.card .list-group-flush .list-group-item i{
+    margin-left: 10px;
+}
 .card li i:hover{
     margin: 5px 5px;
     transform: scale(1.5);
