@@ -653,9 +653,8 @@ a{
 }
 
 .card:hover{
-    transition: .5s;
     box-shadow: 5px 5px 10px black;
-    transform: scale(1.05);
+    scale:1.025;
 }
 .card li i{
     font-size: 40px;
