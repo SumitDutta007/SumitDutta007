@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @SumitDutta007
 - 👀 I’m interested in Web Developement , Competitive coding and Open Source Contribution .
-- 🌱 I’m currently learning C++ , Javascript & React
+- 🌱 I’m currently learning DSA , C++ , React & Vue.js
 - 📫 How to reach me sumitdutta2810@gmail.com
 
 <!---
