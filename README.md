@@ -5,8 +5,6 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=sumitdutta007" alt="sumitdutta007" /></a> </p>
 
-<p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
-
 - 🌱 I’m currently learning **React.js , Vue.js**
 
 - 👨‍💻 All of my projects are available at [https://sumitdutta.netlify.app](https://sumitdutta.netlify.app)
@@ -25,6 +23,3 @@
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=sumitdutta007&show_icons=true&locale=en&layout=compact" alt="sumitdutta007" /></p>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=sumitdutta007&show_icons=true&locale=en" alt="sumitdutta007" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=sumitdutta007&" alt="sumitdutta007" /></p>
-
