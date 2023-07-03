@@ -73,18 +73,12 @@ ScrollReveal().reveal('.arrow',{origin:'top'});
 // ******************** Music button functionality *******************//
 
 const music = document.querySelector('.music')
-const search = document.querySelector('.btn-group')
+
 const artistButton = document.querySelector('.dropdown-toggle-split')
 const artistInput = document.querySelector('#artist')
-const dropdown_menu = document.querySelector('.dropdown-menu')
+const dropdown_menu = document.querySelector('.songList')
+const close = document.querySelector('.btn-close')
 
-
-music.addEventListener('click',()=>{
-    if(search.style.display === "none"){
-        search.style.display = "block"
-    }
-    else search.style.display = "none"
-})
 
 // ************** SPOTIFY API ************************* //
 
@@ -136,6 +130,9 @@ const getTrack = async(token,artistId)=>{
 let artistName = ""
 
 artistButton.addEventListener('click',()=>{
+    for(let keys in songs){
+        delete songs[keys]
+    }
         
     artistName = artistInput.value
 
@@ -148,13 +145,18 @@ artistButton.addEventListener('click',()=>{
         dropdown_menu.innerHTML=""
         for(let key in songs){
             dropdown_menu.innerHTML += `<li><a class="dropdown-item" href="${songs[key]}">${key}</a></li>
-            <li><hr class="dropdown-divider"></li>
+            <br>
             `
         }
     }
     getDetails();
+    
+        
+})
+close.addEventListener('click',()=>{
+    dropdown_menu.innerHTML=""
     for(let keys in songs){
         delete songs[keys]
     }
-        
+    artistInput.value=""
 })
