@@ -1,6 +1,6 @@
 ![Header](https://github.blog/wp-content/uploads/2021/01/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.png?resize=1200%2C630)
 <h1 align="center">Hi 👋, I'm Sumit Dutta</h1>
-<h3 align="center">A passionate and budding frontend developer</h3>
+<h3 align="center">A passionate and budding full-stack developer</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=sumitdutta007&label=Profile%20views&color=0e75b6&style=flat" alt="sumitdutta007" /> </p>
 
