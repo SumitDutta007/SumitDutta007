@@ -6,8 +6,6 @@
 
 - 🌱 I’m currently learning **React.js , Express.js**
 
-- 👨‍💻 All of my projects are available at [https://sumitdutta.netlify.app](https://sumitdutta.netlify.app)
-
 - 📫 How to reach me **sumitdutta2810@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
