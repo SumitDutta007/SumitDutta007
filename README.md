@@ -4,7 +4,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=sumitdutta007&label=Profile%20views&color=0e75b6&style=flat" alt="sumitdutta007" /> </p>
 
-- 🌱 I’m currently learning **React.js , Express.js**
+- 🌱 I’m currently learning **Next.js**
 
 - 📫 How to reach me **sumitdutta2810@gmail.com**
 
