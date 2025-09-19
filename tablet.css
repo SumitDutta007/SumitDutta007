@@ -31,23 +31,25 @@
 }
 @media screen and (max-width:593px){
     .context{
-        justify-content: space-between;
-        padding: 0 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0 16px;
     }
 
     .icons{
-        margin-right: 0;
-        flex-direction: column;
-        justify-content: right;
+        margin: 12px 0 0 0;
+        flex-direction: row;
+        justify-content: flex-start;
     }
     .icons a{
-        padding: 0;
+        padding: 0 8px 0 0;
     }
     .icons a i{
-        font-size: 25px !important;
+        font-size: 24px !important;
     }
     .icons a:nth-child(2){
-        padding: 20px 0;
+        padding: 0 8px 0 0;
     }
 }
 
