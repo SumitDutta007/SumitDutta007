@@ -1,4 +1,12 @@
-import { Battery, Maximize2, Menu, Minus, Volume2, Wifi, X } from "lucide-react";
+import {
+  Battery,
+  Maximize2,
+  Menu,
+  Minus,
+  Volume2,
+  Wifi,
+  X,
+} from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
 
 const MenuBar = ({
@@ -176,7 +184,9 @@ const MenuBar = ({
         )}
 
         {/* Portfolio Name - Always visible */}
-        <span className="font-semibold px-1 md:px-2 text-xs md:text-sm truncate max-w-[120px] md:max-w-none">SUMIT DUTTA</span>
+        <span className="font-semibold px-1 md:px-2 text-xs md:text-sm truncate max-w-[120px] md:max-w-none">
+          SUMIT DUTTA
+        </span>
 
         {/* Desktop Menu - Hidden on small screens */}
         <div className="hidden md:flex items-center gap-1">
@@ -227,7 +237,9 @@ const MenuBar = ({
         <Volume2 className="w-3 h-3 md:w-3.5 md:h-3.5 hidden sm:block" />
         <div className="flex items-center gap-0.5 md:gap-1">
           <Battery className="w-3 h-3 md:w-3.5 md:h-3.5" />
-          <span className="text-slate-300 text-[10px] md:text-xs hidden sm:inline">{batteryLevel}%</span>
+          <span className="text-slate-300 text-[10px] md:text-xs hidden sm:inline">
+            {batteryLevel}%
+          </span>
         </div>
         <span className="text-slate-300 text-[10px] md:text-xs">
           {time.toLocaleTimeString("en-US", {
@@ -241,7 +253,10 @@ const MenuBar = ({
       {isMobileMenuOpen && (
         <div className="absolute top-full left-0 right-0 bg-slate-900/98 backdrop-blur-xl border-b border-slate-700/50 shadow-2xl md:hidden">
           {Object.keys(menuItems).map((menuName) => (
-            <div key={menuName} className="border-b border-slate-800/50 last:border-b-0">
+            <div
+              key={menuName}
+              className="border-b border-slate-800/50 last:border-b-0"
+            >
               <button
                 onClick={() => handleMenuClick(menuName)}
                 className={`w-full px-4 py-2.5 text-left font-medium hover:bg-slate-800/60 transition-colors flex items-center justify-between ${
@@ -249,9 +264,15 @@ const MenuBar = ({
                 }`}
               >
                 <span>{menuName}</span>
-                <span className={`transform transition-transform ${activeMenu === menuName ? 'rotate-90' : ''}`}>›</span>
+                <span
+                  className={`transform transition-transform ${
+                    activeMenu === menuName ? "rotate-90" : ""
+                  }`}
+                >
+                  ›
+                </span>
               </button>
-              
+
               {activeMenu === menuName && (
                 <div className="bg-slate-800/30">
                   {menuItems[menuName].map((item, index) => (
