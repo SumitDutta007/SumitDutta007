@@ -43,10 +43,18 @@ const FileIcon = ({ file, onDoubleClick, viewMode = "medium" }) => {
 
   const handleClick = () => {
     const now = Date.now();
-    if (now - lastClick < 300) {
+    const timeSinceLastClick = now - lastClick;
+    
+    // If it's a double click (within 300ms), just open once
+    // If it's a single click, open after a short delay to allow for potential double-click
+    if (timeSinceLastClick < 300) {
+      // Double click detected - file already opened by first click, do nothing
+      setLastClick(0); // Reset to prevent triple-click issues
+    } else {
+      // Single click - open the file immediately
       onDoubleClick();
+      setLastClick(now);
     }
-    setLastClick(now);
   };
 
   return (
