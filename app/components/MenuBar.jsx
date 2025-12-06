@@ -168,7 +168,7 @@ const MenuBar = ({
           </div>
         )}
 
-        <span className="font-semibold px-2">Portfolio</span>
+        <span className="font-semibold px-2">SUMIT DUTTA</span>
 
         {Object.keys(menuItems).map((menu) => (
           <div key={menu} className="relative">
