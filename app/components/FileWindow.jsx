@@ -29,7 +29,21 @@ const FileWindow = ({ file, onClose, onMinimize }) => {
                 key={index}
                 className="border-l-2 border-purple-400 pl-4 space-y-2"
               >
-                <h3 className="text-lg font-semibold text-white">{exp.role}</h3>
+                <div className="flex items-start justify-between">
+                  <h3 className="text-lg font-semibold text-white">
+                    {exp.role}
+                  </h3>
+                  {exp.link && (
+                    <a
+                      href={exp.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-purple-400 text-sm hover:underline"
+                    >
+                      View Project →
+                    </a>
+                  )}
+                </div>
                 <p className="text-purple-400">{exp.organization}</p>
                 <p className="text-slate-400 text-sm">{exp.period}</p>
                 <ul className="list-disc list-inside space-y-1 text-slate-300">
