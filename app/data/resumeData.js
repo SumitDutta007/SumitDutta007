@@ -2,7 +2,7 @@ export const resumeData = {
   about: {
     name: "SUMIT DUTTA",
     location: "Ranchi, Jharkhand, India",
-    bio: "Computer Science enthusiast pursuing B.Tech+M.Tech (IDD) in Civil Engineering from IIT (BHU) Varanasi with a CPI of 8.5. Passionate about full-stack development, competitive programming, and building scalable web applications. Experienced in leading tech teams and developing AI-driven solutions that serve real users.",
+    bio: "Computer Science enthusiast pursuing B.Tech+M.Tech (IDD) in Computer Science from IIT (BHU) Varanasi with a CPI of 8.5. Passionate about full-stack development, competitive programming, and building scalable web applications. Experienced in leading tech teams and developing AI-driven solutions that serve real users.",
   },
 
   experience: [
@@ -96,7 +96,7 @@ export const resumeData = {
 
   education: {
     institution: "Indian Institute Of Technology (BHU), Varanasi",
-    degree: "Civil Engineering - B.Tech+M.Tech (IDD)",
+    degree: "Computer Science - B.Tech+M.Tech (IDD)",
     period: "September 2022 – May 2027",
     cpi: "8.5",
     location: "Uttar Pradesh, India",
