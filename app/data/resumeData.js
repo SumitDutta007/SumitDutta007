@@ -2,7 +2,7 @@ export const resumeData = {
   about: {
     name: "SUMIT DUTTA",
     location: "Ranchi, Jharkhand, India",
-    bio: "Software Engineer enthusiast pursuing B.Tech+M.Tech (IDD) in Computer Science from IIT (BHU) Varanasi with a CPI of 8.5. Passionate about full-stack development, competitive programming, and building scalable web applications. Experienced in leading tech teams and developing AI-driven solutions that serve real users.",
+    bio: "Software Engineer enthusiast pursuing B.Tech+M.Tech (IDD) from IIT (BHU) Varanasi with a CPI of 8.5. Passionate about full-stack development, competitive programming, and building scalable web applications. Experienced in leading tech teams and developing AI-driven solutions that serve real users.",
   },
 
   experience: [
