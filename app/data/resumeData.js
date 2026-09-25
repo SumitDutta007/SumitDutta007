@@ -23,7 +23,6 @@ export const resumeData = {
       role: "Tech Head",
       organization: "SHILP'25 - College Fest",
       period: "Dec 2024 – Apr 2025",
-      link: "https://www.shilpiitbhu.in/",
       highlights: [
         "Led end-to-end design and deployment of college fest website, handling 200+ participant users.",
         "Built registration and payment backend system, processing 100+ payments and 40% faster flow.",
