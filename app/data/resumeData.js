@@ -7,14 +7,27 @@ export const resumeData = {
 
   experience: [
     {
+      role: "Software Development Intern",
+      organization: "Nation Innovation",
+      period: "May 2025 – July 2026",
+      highlights: [
+        "Contributed to the deployment of an e-learning application featuring role-based dashboard.",
+        "Implemented RESTful APIs supporting full CRUD for users for courses, standardizing backend interactions",
+        "Developed reusable REACT component library to standardize UI and accelerate feature delivery.",
+        "Architected and optimized MongoDB schemas, improving query response time by 40%.",
+        "Implemented Clerk for secure, role-based authentication and route protection, enforcing access controls.",
+        "Exposure : React, Node.js, Express, MongoDB, Clerk, RESTful APIs"
+      ],
+    },
+    {
       role: "Tech Head",
       organization: "SHILP'25 - College Fest",
       period: "Dec 2024 – Apr 2025",
       link: "https://www.shilpiitbhu.in/",
       highlights: [
-        "Led end-to-end design and deployment of a high-uptime college fest website with 200+ participant users",
-        "Optimized registration/payment backend, processing 100+ payments with zero failures and 40% faster flow",
-        "Mentored a 5-member tech team, achieving 60% faster bug resolution and deliveries ahead of schedule",
+        "Led end-to-end design and deployment of college fest website, handling 200+ participant users.",
+        "Built registration and payment backend system, processing 100+ payments and 40% faster flow.",
+        "Mentored a 4-member tech team and ensured seamless execution across 10+ events.",
       ],
     },
     {
